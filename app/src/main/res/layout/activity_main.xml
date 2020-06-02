@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center" />
+
+    <com.kay.appdemo.image.CustomImageContainer
+        android:orientation="vertical"
+        android:id="@+id/imageHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@color/colorAccent"
+            android:id="@id/imagePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <TextView
+
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:id="@id/downloadedSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.kay.appdemo.image.CustomImageContainer>
+
+    <Button
+        android:layout_marginTop="36dp"
+        android:onClick="clearCacheAndExit"
+        android:text="Clear caches and exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
